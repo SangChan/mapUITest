@@ -23,6 +23,13 @@
 		634B3D0A17C307B1003D9DC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 634B3CE517C307B1003D9DC0 /* Foundation.framework */; };
 		634B3D1217C307B1003D9DC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 634B3D1017C307B1003D9DC0 /* InfoPlist.strings */; };
 		634B3D1517C307B1003D9DC0 /* mapTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 634B3D1417C307B1003D9DC0 /* mapTestTests.m */; };
+		634BC30D17C31ACA00EFC68A /* selectOptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 634BC30C17C31ACA00EFC68A /* selectOptionTableViewCell.m */; };
+		634BC30F17C31B0700EFC68A /* selectOptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 634BC30E17C31B0700EFC68A /* selectOptionTableViewCell.xib */; };
+		636BB9B917C5E5E400B1A958 /* MyShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 636BB9B717C5E5E300B1A958 /* MyShopListViewController.m */; };
+		636BB9BA17C5E5E400B1A958 /* MyShopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636BB9B817C5E5E300B1A958 /* MyShopListViewController.xib */; };
+		636BB9BC17C5F8AD00B1A958 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BB9BB17C5F8AC00B1A958 /* libsqlite3.dylib */; };
+		636BB9C117C61B9E00B1A958 /* searchList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 636BB9C017C61B9E00B1A958 /* searchList.sqlite */; };
+		636BB9C217C61B9E00B1A958 /* searchList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 636BB9C017C61B9E00B1A958 /* searchList.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,14 @@
 		634B3D1117C307B1003D9DC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		634B3D1317C307B1003D9DC0 /* mapTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mapTestTests.h; sourceTree = "<group>"; };
 		634B3D1417C307B1003D9DC0 /* mapTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mapTestTests.m; sourceTree = "<group>"; };
+		634BC30B17C31ACA00EFC68A /* selectOptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectOptionTableViewCell.h; sourceTree = "<group>"; };
+		634BC30C17C31ACA00EFC68A /* selectOptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectOptionTableViewCell.m; sourceTree = "<group>"; };
+		634BC30E17C31B0700EFC68A /* selectOptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = selectOptionTableViewCell.xib; sourceTree = "<group>"; };
+		636BB9B617C5E5E300B1A958 /* MyShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyShopListViewController.h; sourceTree = "<group>"; };
+		636BB9B717C5E5E300B1A958 /* MyShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyShopListViewController.m; sourceTree = "<group>"; };
+		636BB9B817C5E5E300B1A958 /* MyShopListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyShopListViewController.xib; sourceTree = "<group>"; };
+		636BB9BB17C5F8AC00B1A958 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		636BB9C017C61B9E00B1A958 /* searchList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = searchList.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636BB9BC17C5F8AD00B1A958 /* libsqlite3.dylib in Frameworks */,
 				634B3CE417C307B1003D9DC0 /* UIKit.framework in Frameworks */,
 				634B3CE617C307B1003D9DC0 /* Foundation.framework in Frameworks */,
 				634B3CE817C307B1003D9DC0 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +122,7 @@
 		634B3CE217C307B1003D9DC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				636BB9BB17C5F8AC00B1A958 /* libsqlite3.dylib */,
 				634B3CE317C307B1003D9DC0 /* UIKit.framework */,
 				634B3CE517C307B1003D9DC0 /* Foundation.framework */,
 				634B3CE717C307B1003D9DC0 /* CoreGraphics.framework */,
@@ -122,7 +139,13 @@
 				634B3CFB17C307B1003D9DC0 /* ViewController.h */,
 				634B3CFC17C307B1003D9DC0 /* ViewController.m */,
 				634B3CFE17C307B1003D9DC0 /* ViewController.xib */,
+				636BB9B617C5E5E300B1A958 /* MyShopListViewController.h */,
+				636BB9B717C5E5E300B1A958 /* MyShopListViewController.m */,
+				636BB9B817C5E5E300B1A958 /* MyShopListViewController.xib */,
 				634B3CEA17C307B1003D9DC0 /* Supporting Files */,
+				634BC30B17C31ACA00EFC68A /* selectOptionTableViewCell.h */,
+				634BC30C17C31ACA00EFC68A /* selectOptionTableViewCell.m */,
+				634BC30E17C31B0700EFC68A /* selectOptionTableViewCell.xib */,
 			);
 			path = mapTest;
 			sourceTree = "<group>";
@@ -154,6 +177,7 @@
 		634B3D0E17C307B1003D9DC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				636BB9C017C61B9E00B1A958 /* searchList.sqlite */,
 				634B3D0F17C307B1003D9DC0 /* mapTestTests-Info.plist */,
 				634B3D1017C307B1003D9DC0 /* InfoPlist.strings */,
 			);
@@ -236,6 +260,9 @@
 				634B3CF817C307B1003D9DC0 /* Default@2x.png in Resources */,
 				634B3CFA17C307B1003D9DC0 /* Default-568h@2x.png in Resources */,
 				634B3D0017C307B1003D9DC0 /* ViewController.xib in Resources */,
+				634BC30F17C31B0700EFC68A /* selectOptionTableViewCell.xib in Resources */,
+				636BB9BA17C5E5E400B1A958 /* MyShopListViewController.xib in Resources */,
+				636BB9C117C61B9E00B1A958 /* searchList.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634B3D1217C307B1003D9DC0 /* InfoPlist.strings in Resources */,
+				636BB9C217C61B9E00B1A958 /* searchList.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +301,8 @@
 				634B3CF017C307B1003D9DC0 /* main.m in Sources */,
 				634B3CF417C307B1003D9DC0 /* AppDelegate.m in Sources */,
 				634B3CFD17C307B1003D9DC0 /* ViewController.m in Sources */,
+				634BC30D17C31ACA00EFC68A /* selectOptionTableViewCell.m in Sources */,
+				636BB9B917C5E5E400B1A958 /* MyShopListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +414,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapTest/mapTest-Prefix.pch";
 				INFOPLIST_FILE = "mapTest/mapTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mapTest/mapTest-Prefix.pch";
 				INFOPLIST_FILE = "mapTest/mapTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -453,6 +485,7 @@
 				634B3D1A17C307B1003D9DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		634B3D1B17C307B1003D9DC0 /* Build configuration list for PBXNativeTarget "mapTestTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +494,7 @@
 				634B3D1D17C307B1003D9DC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
