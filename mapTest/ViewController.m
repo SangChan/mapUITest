@@ -24,8 +24,8 @@
         self.popupTableView = [[UITableView alloc]init];
         [self.view addSubview:self.popupTableView];
         
-        //self.popupTableView.delegate = self;
-        //self.popupTableView.dataSource = self;
+        self.popupTableView.delegate = self;
+        self.popupTableView.dataSource = self;
         
         self.listTableView.delegate = self;
         self.listTableView.dataSource = self;
@@ -187,6 +187,23 @@ static NSString *listTableVIewCellIdentifier = @"listTableViewCell";
         }
     }
 }
+
+-(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *thisCell = [tableView cellForRowAtIndexPath:indexPath];
+    if (tableView.tag == POPUP_TABLE) {
+        if (indexPath.row == 0) {
+            BOOL checked = (thisCell.accessoryType == UITableViewCellAccessoryNone)? YES:NO;
+            NSArray *cells = [tableView visibleCells];
+            for (UITableViewCell *tempCell in cells) {
+                [self tableViewCell:tempCell checked:checked];
+            }
+        }
+        else {
+            [self tableViewCell:thisCell checked:(thisCell.accessoryType == UITableViewCellAccessoryNone)? YES:NO];
+        }
+    }
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)aScrollView
 {
     [self.view endEditing:YES];
