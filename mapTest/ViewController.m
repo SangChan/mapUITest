@@ -30,6 +30,15 @@
         self.listTableView.delegate = self;
         self.listTableView.dataSource = self;
         self.searchBar.delegate = self;
+        
+        UIImage *image = [[UIImage imageNamed:@"1-the-scream.jpg"] resizedImage:CGSizeMake(100, 100) interpolationQuality:kCGInterpolationDefault];
+        image = [image roundedCornerImage:50 borderSize:2];
+        UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
+        CGRect imageViewFrame = imageView.frame;
+        imageViewFrame.origin.y = 100;
+        imageView.frame = imageViewFrame;
+        [self.view addSubview:imageView];
+        //image roundedCornerImage:<#(NSInteger)#> borderSize:<#(NSInteger)#>
     }
     return self;
 }

@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
 #import "MyShopListViewController.h"
+#import "UIImage+RoundedCorner.h"
+#import "UIImage+Resize.h"
 
 #define LIST_TABLE 1
 #define POPUP_TABLE 2

@@ -30,6 +30,10 @@
 		636BB9BC17C5F8AD00B1A958 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BB9BB17C5F8AC00B1A958 /* libsqlite3.dylib */; };
 		636BB9C117C61B9E00B1A958 /* searchList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 636BB9C017C61B9E00B1A958 /* searchList.sqlite */; };
 		636BB9C217C61B9E00B1A958 /* searchList.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 636BB9C017C61B9E00B1A958 /* searchList.sqlite */; };
+		6378CC6C17CCA39F00892340 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 6378CC6717CCA39F00892340 /* UIImage+Alpha.m */; };
+		6378CC6D17CCA39F00892340 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6378CC6917CCA39F00892340 /* UIImage+Resize.m */; };
+		6378CC6E17CCA39F00892340 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6378CC6B17CCA39F00892340 /* UIImage+RoundedCorner.m */; };
+		6378CC7217CCA5A800892340 /* 1-the-scream.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6378CC7117CCA5A800892340 /* 1-the-scream.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,13 @@
 		636BB9B817C5E5E300B1A958 /* MyShopListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyShopListViewController.xib; sourceTree = "<group>"; };
 		636BB9BB17C5F8AC00B1A958 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		636BB9C017C61B9E00B1A958 /* searchList.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = searchList.sqlite; sourceTree = "<group>"; };
+		6378CC6617CCA39F00892340 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		6378CC6717CCA39F00892340 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		6378CC6817CCA39F00892340 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		6378CC6917CCA39F00892340 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		6378CC6A17CCA39F00892340 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
+		6378CC6B17CCA39F00892340 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		6378CC7117CCA5A800892340 /* 1-the-scream.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-the-scream.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +145,7 @@
 		634B3CE917C307B1003D9DC0 /* mapTest */ = {
 			isa = PBXGroup;
 			children = (
+				6378CC6517CCA39F00892340 /* UIImage-categories */,
 				634B3CF217C307B1003D9DC0 /* AppDelegate.h */,
 				634B3CF317C307B1003D9DC0 /* AppDelegate.m */,
 				634B3CFB17C307B1003D9DC0 /* ViewController.h */,
@@ -153,6 +165,7 @@
 		634B3CEA17C307B1003D9DC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6378CC7117CCA5A800892340 /* 1-the-scream.jpg */,
 				634B3CEB17C307B1003D9DC0 /* mapTest-Info.plist */,
 				634B3CEC17C307B1003D9DC0 /* InfoPlist.strings */,
 				634B3CEF17C307B1003D9DC0 /* main.m */,
@@ -182,6 +195,19 @@
 				634B3D1017C307B1003D9DC0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6378CC6517CCA39F00892340 /* UIImage-categories */ = {
+			isa = PBXGroup;
+			children = (
+				6378CC6617CCA39F00892340 /* UIImage+Alpha.h */,
+				6378CC6717CCA39F00892340 /* UIImage+Alpha.m */,
+				6378CC6817CCA39F00892340 /* UIImage+Resize.h */,
+				6378CC6917CCA39F00892340 /* UIImage+Resize.m */,
+				6378CC6A17CCA39F00892340 /* UIImage+RoundedCorner.h */,
+				6378CC6B17CCA39F00892340 /* UIImage+RoundedCorner.m */,
+			);
+			path = "UIImage-categories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +289,7 @@
 				634BC30F17C31B0700EFC68A /* selectOptionTableViewCell.xib in Resources */,
 				636BB9BA17C5E5E400B1A958 /* MyShopListViewController.xib in Resources */,
 				636BB9C117C61B9E00B1A958 /* searchList.sqlite in Resources */,
+				6378CC7217CCA5A800892340 /* 1-the-scream.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +330,9 @@
 				634B3CFD17C307B1003D9DC0 /* ViewController.m in Sources */,
 				634BC30D17C31ACA00EFC68A /* selectOptionTableViewCell.m in Sources */,
 				636BB9B917C5E5E400B1A958 /* MyShopListViewController.m in Sources */,
+				6378CC6C17CCA39F00892340 /* UIImage+Alpha.m in Sources */,
+				6378CC6D17CCA39F00892340 /* UIImage+Resize.m in Sources */,
+				6378CC6E17CCA39F00892340 /* UIImage+RoundedCorner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
